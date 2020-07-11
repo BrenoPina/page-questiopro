@@ -1,38 +1,130 @@
-.flx{
-    display: flex;
-}
-.list-unstyled{
-    list-style: none;
-    padding: 0;
-    margin: 0;
+.flx {
+  display: flex;
 }
 
-
+.list-unstyled {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
 
 .ctn {
-    display: flex;
-    justify-content: center;
+  display: flex;
+  justify-content: center;
+}
 
+.content {
+  width: 1140px;
+  min-height: 10px;
+  display: flex;
+  justify-content: space-between;
+  margin: 0 1.5%;
 }
-.content{
-    width: 1140px;
-    border: 1px solid red;
-    min-height: 10px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    margin: 0 1.5%;
-    padding: 1em 0;
+
+.btn {
+  display: inline-block;
+  padding: 0.6em 1.2em;
+  background-color: #aaa;
+  border: none;
+  text-decoration: none;
 }
-.logo img{
-    width: 167px
+
+.btn-blue {
+  background-color: #1B87E6;
+  color: white;
+  font-weight: 500 !important;
 }
-.menu-list{
-    font-family: 'Fira Sans', sans-serif;
+
+.btn-light {
+  background-color: #fff;
+  color: #1B87E6;
+  font-weight: 400 !important;
 }
-.menu-list a{
-    color: rgb(80, 80, 80);
-    font-weight: 300;
-    padding: .5em;
-    text-decoration: none;
+
+.top {
+  box-shadow: 0 1px 7px rgba(0, 0, 0, 0.2);
+}
+
+.top-content {
+  position: relative;
+}
+
+.logo {
+  align-self: center;
+}
+
+.logo img {
+  width: 167px;
+}
+
+.menu {
+  font-family: "Fira Sans", sans-serif;
+}
+.menu a {
+  text-decoration: none;
+  font-weight: 300;
+}
+
+.list-country a, .list-nav a {
+  color: #505050;
+}
+
+.list-nav li {
+  align-self: center;
+  padding: 1.5em 0;
+}
+.list-nav a {
+  position: relative;
+  padding: 0.5em;
+}
+.list-nav a .fas {
+  position: relative;
+  top: 1px;
+}
+
+.btn-product-items:hover .list-product {
+  visibility: visible;
+}
+
+.list-product {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  display: flex;
+  visibility: hidden;
+  background-color: rgba(225, 225, 225, 0.95);
+  width: 100%;
+  border-top: 1px solid #dadada;
+}
+.list-product li {
+  flex: 1;
+  min-height: 100px;
+}
+
+.list-country {
+  margin-left: 1em;
+  margin-right: 1.5em;
+  align-items: center;
+}
+.list-country li:first-child::after {
+  content: "";
+  display: inline-block;
+  margin: 0 0.5em;
+  background-color: #333;
+  width: 1px;
+  height: 1.5em;
+  vertical-align: middle;
+}
+.list-country a {
+  font-size: 0.8em;
+  font-weight: 500;
+}
+
+.list-button {
+  font-size: 0.85em;
+  align-items: center;
+}
+.list-button li:first-child {
+  margin-right: 0.5em;
+  text-transform: uppercase;
 }

@@ -1,0 +1,103 @@
+@import 'base';
+.top {
+    box-shadow: 0 1px 7px rgba(0, 0, 0, .2);
+}
+.top-content {
+    position: relative;
+}
+.logo {
+    align-self: center;
+}
+.logo img {
+    width: 167px;
+}
+.menu {
+    font-family: 'Fira Sans', sans-serif;
+    
+    a {
+        text-decoration: none;
+        font-weight: 300;
+    }
+}
+
+%color-font {
+    color: rgb(80, 80, 80);
+}
+
+.list-nav {
+
+    li {
+        align-self: center;
+        padding: 1.5em 0;
+    }
+
+    a {
+        position: relative;
+        @extend %color-font;
+        padding: .5em;
+        
+
+
+        .fas {
+            position: relative;
+            top: 1px;
+        }
+    }
+}
+
+.btn-product-items {
+
+    
+
+    &:hover .list-product {
+        visibility: visible;
+    }
+}
+.list-product {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    display: flex;
+    visibility: hidden;
+    background-color:rgba(225, 225, 225, 0.95);
+    width: 100%;
+    border-top: 1px solid rgb(218, 218, 218);
+
+    li {
+        flex: 1;
+        min-height: 100px;
+    }
+}
+.list-country {
+
+    
+    margin-left: 1em;
+    margin-right: 1.5em;
+    align-items: center;
+
+    li:first-child::after {
+        content: '';
+        display: inline-block;
+        margin: 0 .5em;
+        background-color: #333;
+        width: 1px;
+        height: 1.5em;
+        vertical-align: middle;
+    }
+
+    a  {
+        @extend %color-font;
+        font-size: .8em;
+        font-weight: 500;
+    }
+}
+.list-button {
+
+    font-size: .85em;
+    align-items: center;
+
+    li:first-child {
+        margin-right: .5em;
+        text-transform: uppercase;
+    }
+}

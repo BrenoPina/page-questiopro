@@ -8,19 +8,31 @@
     <link rel="stylesheet" href="assets/lib/fontawesome/css/solid.min.css">
     <link rel="stylesheet" href="assets/lib/fontawesome/css/brands.min.css">
     <link rel="stylesheet" href="node_modules/normalize.css/normalize.css">
-    <link href="https://fonts.googleapis.com/css2?family=Fira+Sans:wght@300;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Fira+Sans:wght@300;400;500;700&display=swap" rel="stylesheet">
     <title>QuestionPro</title>
 </head>
 <body>
-    <header class="ctn">
-        <div class="content">
+    <header class="top ctn">
+        <div class="content top-content">
             <div class="logo">
-                <a><img src="assets/images/logo.svg" alt="logo"></a>
+                <a href="https://www.questionpro.com/pt-br/" target="_blank">
+                    <img src="assets/images/logo.svg" alt="logo">
+                </a>
             </div>
-            <div class="menu">
-                <nav>
-                    <ul class="menu-list list-unstyled flx">
-                        <li><a href="#">Produtos</a></li>
+            <div class="menu flx">
+                <nav class="flx">
+                    <ul class="list-nav list-unstyled flx">
+                        <li class="btn-product-items">
+                            <a href="#">Produtos <i class="fas fa-caret-down"></i></a>
+                            <ul class="list-product list-unstyled">
+                                <li>teste</li>
+                                <li>teste</li>
+                                <li>teste</li>
+                                <li>teste</li>
+                                <li>teste</li>
+                                <li>teste</li>
+                            </ul>
+                        </li>
                         <li><a href="#">Recursos</a></li>
                         <li><a href="#">Clientes</a></li>
                         <li><a href="#">Blog</a></li>
@@ -28,6 +40,14 @@
                         <li><a href="#"><i class="fas fa-question-circle"></i></a></li>
                     </ul>
                 </nav>
+                <ul class="list-country list-unstyled flx">
+                    <li><a href="#">PT-BR</a></li>
+                    <li><a href="#"><i class="fas fa-phone-alt"></i></a></li>
+                </ul>
+                <ul class="list-button list-unstyled flx">
+                    <li><a href="#" class="btn btn-blue">Conta gratuita</a></li>
+                    <li><a href="#" class="btn btn-light">Acessar</a></li>
+                </ul>
             </div>
         </div>
     </header>    
